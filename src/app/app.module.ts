@@ -11,6 +11,7 @@ import { CadastroProfissionalComponent } from './cadastro-profissional/cadastro-
 import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 import { SairComponent } from './sair/sair.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { NavbarComponent } from './navbar/navbar.component';
       {path: "cadastro-profissional", component: CadastroProfissionalComponent},
       {path: "cadastro-usuario", component: CadastroUsuarioComponent},
       {path: "", component: HomeComponent},
-      {path:"sair", component: SairComponent},
+      {path: "sair", component: SairComponent},
+      {path: "sobre", component: SobreComponent},
     ])
   ],
   declarations: [ 
@@ -33,7 +35,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     CadastroUsuarioComponent,
     HomeComponent,
     NavbarComponent,
-    SairComponent ],
+    SairComponent,
+    SobreComponent ],
   bootstrap:    [ 
     AppComponent ]
 })
