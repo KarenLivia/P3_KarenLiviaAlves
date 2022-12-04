@@ -10,6 +10,7 @@ import { AgendamentosComponent } from './agendamentos/agendamentos.component';
 import { CadastroProfissionalComponent } from './cadastro-profissional/cadastro-profissional.component';
 import { CadastroUsuarioComponent } from './cadastro-usuario/cadastro-usuario.component';
 import { SairComponent } from './sair/sair.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -26,7 +27,13 @@ import { SairComponent } from './sair/sair.component';
   ],
   declarations: [ 
     AppComponent, 
-    HelloComponent ],
+    HelloComponent,
+    AgendamentosComponent,
+    CadastroProfissionalComponent,
+    CadastroUsuarioComponent,
+    HomeComponent,
+    NavbarComponent,
+    SairComponent ],
   bootstrap:    [ 
     AppComponent ]
 })
