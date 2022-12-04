@@ -5,7 +5,7 @@ class cadastroUsuario {
 }
 
 @Injectable()
-export class TasksService {
+export class CadastroUsuarioService {
   private cadastroU: cadastroUsuario[] = [];
 
   constructor() {}
