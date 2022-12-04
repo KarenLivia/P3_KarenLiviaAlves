@@ -5,13 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './componentes/home/home.component';
-import { AgendamentosComponent } from './componentes/agendamentos/agendamentos.component';
-import { CadastroProfissionalComponent } from './componentes/cadastro-profissional/cadastro-profissional.component';
-import { CadastroUsuarioComponent } from './componentes/cadastro-usuario/cadastro-usuario.component';
-import { SairComponent } from './componentes/sair/sair.component';
-import { NavbarComponent } from './componentes/navbar/navbar.component';
-import { SobreComponent } from './componentes/sobre/sobre.component';
+import { HomeComponent } from './components/home/home.component';
+import { AgendamentosComponent } from './components/agendamentos/agendamentos.component';
+import { CadastroProfissionalComponent } from './components/cadastro-profissional/cadastro-profissional.component';
+import { CadastroUsuarioComponent } from './components/cadastro-usuario/cadastro-usuario.component';
+import { SairComponent } from './components/sair/sair.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SobreComponent } from './components/sobre/sobre.component';
 
 @NgModule({
   imports:      [ 
