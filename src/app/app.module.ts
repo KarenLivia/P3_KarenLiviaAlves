@@ -12,6 +12,8 @@ import { CadastroUsuarioComponent } from './components/cadastro-usuario/cadastro
 import { SairComponent } from './components/sair/sair.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { CadastroUsuarioService } from './services/cadastro-usuario.service';
+import { CadastroProfissionalService } from './services/cadastro-profissional.service';
 
 @NgModule({
   imports:      [ 
@@ -37,6 +39,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
     SairComponent,
     SobreComponent ],
   bootstrap:    [ 
-    AppComponent ]
+    AppComponent ],
+  providers: [CadastroUsuarioService, CadastroProfissionalService],
 })
 export class AppModule { }

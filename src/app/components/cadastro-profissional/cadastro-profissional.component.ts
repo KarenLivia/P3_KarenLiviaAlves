@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CadastroProfissionalService } from '../../services/cadastro-profissional.service';
 
 @Component({
   selector: 'app-cadastro-profissional',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroProfissionalComponent implements OnInit {
 
-  constructor() { }
+  constructor(public cadastroP: CadastroProfissionalService) { }
 
   ngOnInit() {
   }

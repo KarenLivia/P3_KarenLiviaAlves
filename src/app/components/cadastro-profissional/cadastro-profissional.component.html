@@ -7,11 +7,16 @@
   </head>
   <body>
   <div class="container-fluid">
-    <h5>Cadastro de profissional:</h5>
-    <br/>
-      <p>
-        blablabla
-      </p>
+  <h2>Cadastro de profissional</h2>
+  <input #input type="text" />
+  <button (click)="cadastroP.add(input.value); input.value = ''">+</button>
+  <hr />
+  <ul>
+    <li *ngFor="let c of cadastroP.getList(); index as i">
+      {{c.title}}
+      <button (click)="cadastroP.remove(i)">-</button>
+    </li>
+  </ul>
   </div>
   </body>
 </html>

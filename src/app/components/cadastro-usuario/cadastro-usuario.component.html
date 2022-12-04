@@ -13,7 +13,7 @@
   <hr />
   <ul>
     <li *ngFor="let c of cadastroU.getList(); index as i">
-      {{ cadastroU.title }}
+      {{c.title}}
       <button (click)="cadastroU.remove(i)">-</button>
     </li>
   </ul>
