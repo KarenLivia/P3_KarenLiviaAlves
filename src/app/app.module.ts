@@ -23,7 +23,7 @@ import { SobreComponent } from './sobre/sobre.component';
       {path: "cadastro-profissional", component: CadastroProfissionalComponent},
       {path: "cadastro-usuario", component: CadastroUsuarioComponent},
       {path: "", component: HomeComponent},
-      {path: "sair", component: SairComponent},
+      {path: "sair", component: HomeComponent},
       {path: "sobre", component: SobreComponent},
     ])
   ],
