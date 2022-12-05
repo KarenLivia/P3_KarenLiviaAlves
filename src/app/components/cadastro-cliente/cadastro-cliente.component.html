@@ -9,14 +9,21 @@
   <div class="container-fluid">
   <h5>Cadastro de cliente</h5>
   <input #input type="text" />
-  <button (click)="cadastroC.add(input.value); input.value = ''">+</button>
-  <hr />
   <ul>
-    <li *ngFor="let c of cadastroC.getList(); index as i">
-      {{c.title}}
-      <button (click)="cadastroC.remove(i)">-</button>
+    <li *ngFor="let c of nameC.getList(); index as i">
+      {{c.name}}
+      <button (click)="nameC.remove(i)">-</button>
     </li>
   </ul>
+  <input #input type="number" />
+  <ul>
+    <li *ngFor="let c of nameC.getList(); index as i">
+      {{c.name}}
+      <button (click)="nameC.remove(i)">-</button>
+    </li>
+  </ul>
+  <button (click)="nameC.add(input.value); input.value = ''">Cadastrar</button>
+  <hr />
   </div>
   </body>
 </html>

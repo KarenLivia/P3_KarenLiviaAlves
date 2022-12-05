@@ -8,9 +8,13 @@ import { CadastroClienteService } from '../../services/cadastro-cliente.service'
 })
 export class CadastroClienteComponent implements OnInit {
 
-  constructor(public cadastroC: CadastroClienteService) {}
+  constructor(public nameC: CadastroClienteService) {}
 
   ngOnInit() {
+  }
+
+  cadastrarCliente(name: string, cell: number){
+    
   }
 
 }

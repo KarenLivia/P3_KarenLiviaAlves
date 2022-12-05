@@ -1,22 +1,34 @@
 import { Injectable } from '@angular/core';
 
 class cadastroCliente {
-  title: string;
+  name: string;
+ // cell: number;
 }
 
 @Injectable()
 export class CadastroClienteService {
-  private cadastroC: cadastroCliente[] = [];
+  private nameC: cadastroCliente[] = [];
+ // private cellphoneC: cadastroCliente[] = [];
 
   constructor() {}
 
-  add(title: string) {
-    this.cadastroC.push({ title });
+  add(name: string) {
+    this.nameC.push({ name });
   }
   remove(index: number) {
-    this.cadastroC.splice(index, 1);
+    this.nameC.splice(index, 1);
   }
   getList() {
-    return this.cadastroC;
+    return this.nameC;
   }
+/*
+  add1(cell: number) {
+    this.cellphoneC.push({ cell });
+  }
+  remove1(index: number) {
+    this.cellphoneC.splice(index, 1);
+  }
+  getList1() {
+    return this.cellphoneC;
+  }*/
 }
