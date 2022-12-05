@@ -7,14 +7,14 @@
   </head>
   <body>
   <div class="container-fluid">
-  <h2>Cadastro de usuário</h2>
+  <h5>Cadastro de cliente</h5>
   <input #input type="text" />
-  <button (click)="cadastroU.add(input.value); input.value = ''">+</button>
+  <button (click)="cadastroC.add(input.value); input.value = ''">+</button>
   <hr />
   <ul>
-    <li *ngFor="let c of cadastroU.getList(); index as i">
+    <li *ngFor="let c of cadastroC.getList(); index as i">
       {{c.title}}
-      <button (click)="cadastroU.remove(i)">-</button>
+      <button (click)="cadastroC.remove(i)">-</button>
     </li>
   </ul>
   </div>

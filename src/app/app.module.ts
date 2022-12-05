@@ -8,11 +8,11 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AgendamentosComponent } from './components/agendamentos/agendamentos.component';
 import { CadastroProfissionalComponent } from './components/cadastro-profissional/cadastro-profissional.component';
-import { CadastroUsuarioComponent } from './components/cadastro-usuario/cadastro-usuario.component';
+import { CadastroClienteComponent } from './components/cadastro-cliente/cadastro-cliente.component';
 import { SairComponent } from './components/sair/sair.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SobreComponent } from './components/sobre/sobre.component';
-import { CadastroUsuarioService } from './services/cadastro-usuario.service';
+import { CadastroClienteService } from './services/cadastro-cliente.service';
 import { CadastroProfissionalService } from './services/cadastro-profissional.service';
 
 @NgModule({
@@ -22,7 +22,7 @@ import { CadastroProfissionalService } from './services/cadastro-profissional.se
     RouterModule.forRoot([
       {path: "agendamentos", component: AgendamentosComponent},
       {path: "cadastro-profissional", component: CadastroProfissionalComponent},
-      {path: "cadastro-usuario", component: CadastroUsuarioComponent},
+      {path: "cadastro-cliente", component: CadastroClienteComponent},
       {path: "", component: HomeComponent},
       {path: "sair", component: HomeComponent},
       {path: "sobre", component: SobreComponent},
@@ -33,13 +33,13 @@ import { CadastroProfissionalService } from './services/cadastro-profissional.se
     HelloComponent,
     AgendamentosComponent,
     CadastroProfissionalComponent,
-    CadastroUsuarioComponent,
+    CadastroClienteComponent,
     HomeComponent,
     NavbarComponent,
     SairComponent,
     SobreComponent ],
   bootstrap:    [ 
     AppComponent ],
-  providers: [CadastroUsuarioService, CadastroProfissionalService],
+  providers: [CadastroClienteService, CadastroProfissionalService],
 })
 export class AppModule { }
