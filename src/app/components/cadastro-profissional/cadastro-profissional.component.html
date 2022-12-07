@@ -12,7 +12,12 @@
           <label for="name">Nome completo:</label><br>
           <input #input type="text" id="name"/><br><br>
           <label for="funcao">Função:</label><br>
-          <input #input type="text" id="funcao"/><br><br>
+          <select name="funcao" id="funcao">
+            <option value=""></option>
+            <option value="barbeiro">Barbeiro</option>
+            <option value="manicure">Manicure</option>
+            <option value="admin">Admin</option>
+          </select><br><br>
           <label for="servicos">Serviços:</label><br>
           <input #input type="text" id="servicos"/><br><br>
     <button (click)="cadastroP.add(input.value); input.value = ''">Cadastrar</button>&nbsp;&nbsp;
