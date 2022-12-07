@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-  <div class="container-fluid">
-  <h5>Cadastro de profissional</h5>
-  <input #input type="text" />
-  <button (click)="cadastroP.add(input.value); input.value = ''">+</button>
-  <hr />
-  <ul>
-    <li *ngFor="let c of cadastroP.getList(); index as i">
-      {{c.title}}
-      <button (click)="cadastroP.remove(i)">-</button>
-    </li>
-  </ul>
-  </div>
+    <div class="backmid">
+      <form>
+        <h4>Cadastro de profissional</h4><br>
+          <label for="name">Nome completo:</label><br>
+          <input #input type="text" id="name"/><br><br>
+          <label for="funcao">Função:</label><br>
+          <input #input type="text" id="funcao"/><br><br>
+          <label for="servicos">Serviços:</label><br>
+          <input #input type="text" id="servicos"/><br><br>
+    <button (click)="cadastroP.add(input.value); input.value = ''">Cadastrar</button>
+    <hr />
+      </form>
+      <ol>
+        <li *ngFor="let c of cadastroP.getList(); index as i">
+          {{c.name}}
+          <button (click)="cadastroP.remove(i)">Excluir</button>
+        </li>
+      </ol>
+    </div>
   </body>
 </html>

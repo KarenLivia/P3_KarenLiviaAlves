@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from '../../services/login.service';
+//import { LoginService } from '../../services/login.service';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +8,11 @@ import { LoginService } from '../../services/login.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public nameC: LoginService) {}
+  //constructor(public nameC: LoginService) {}
 
   ngOnInit() {
   }
-  
-  cadastrarCliente(name: string, cell: number){
+
+  //cadastrarCliente(name: string, cell: number){}
     
-  }
 }

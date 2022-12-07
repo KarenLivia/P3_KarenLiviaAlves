@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div>
+    <div class="backmid">
       <form>
         <fieldset>
           <legend>Login</legend>
-          <label for="name">Nome completo:</label><br>
+          <label for="name">Usuário:</label><br>
           <input #input type="text" id="name"/><br><br>
-          <label for="cpf">CPF:</label><br>
-          <input #input type="number" id="cpf"/><br><br>
-          <label for="cell">Celular:</label><br>
-          <input #input type="number" id="cell"/><br><br>
-          <button (click)="nameC.add(input.value); input.value = ''">Cadastrar</button><hr />
+          <label for="senha">Senha:</label><br>
+          <input #input type="password" id="senha"/><br><br>
+          <button type="button">Entrar</button>&nbsp;&nbsp;
+          <button type="button">Limpar</button>
         </fieldset>
       </form>
-      <ol>
+      <hr />
+      <!--<ol>
         <li *ngFor="let c of nameC.getList(); index as i">
           {{c.name}}
           <button (click)="nameC.remove(i)">Excluir</button>
         </li>
-      </ol>
+      </ol>-->
     </div>  
   </body>
 </html>

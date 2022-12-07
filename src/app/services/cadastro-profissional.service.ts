@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 class cadastroProfissional {
-  title: string;
+  name: string;
 }
 
 @Injectable()
@@ -10,8 +10,8 @@ export class CadastroProfissionalService {
 
   constructor() {}
 
-  add(title: string) {
-    this.cadastroP.push({ title });
+  add(name: string) {
+    this.cadastroP.push({ name });
   }
   remove(index: number) {
     this.cadastroP.splice(index, 1);

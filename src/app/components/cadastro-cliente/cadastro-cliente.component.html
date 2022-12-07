@@ -6,18 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div>
+    <div class="backmid">
       <form>
-        <fieldset>
-          <legend>Cadastro de cliente</legend>
+          <h4>Cadastro de cliente</h4><br>
           <label for="name">Nome completo:</label><br>
           <input #input type="text" id="name"/><br><br>
           <label for="cpf">CPF:</label><br>
           <input #input type="number" id="cpf"/><br><br>
           <label for="cell">Celular:</label><br>
           <input #input type="number" id="cell"/><br><br>
-          <button (click)="nameC.add(input.value); input.value = ''">Cadastrar</button><hr />
-        </fieldset>
+          <button (click)="nameC.add(input.value); input.value = ''">Cadastrar</button>
       </form>
       <ol>
         <li *ngFor="let c of nameC.getList(); index as i">
@@ -25,6 +23,7 @@
           <button (click)="nameC.remove(i)">Excluir</button>
         </li>
       </ol>
+      <hr />
     </div>  
   </body>
 </html>

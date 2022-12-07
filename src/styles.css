@@ -1,1 +1,17 @@
 /* Add application styles & imports to this file! */
+
+button {
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.10);
+}
+
+button:hover {background-color: #ad5ac7}
+
+button:active {
+  background-color: #7b3e8e;
+  transform: translateY(4px);
+}
+
+.backmid{
+  background-color: #eee4f1;
+}
