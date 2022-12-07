@@ -8,9 +8,12 @@ import { LoginService } from '../../services/login.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public name: LoginService) {}
+  constructor(public nameC: LoginService) {}
 
   ngOnInit() {
   }
-
+  
+  cadastrarCliente(name: string, cell: number){
+    
+  }
 }
