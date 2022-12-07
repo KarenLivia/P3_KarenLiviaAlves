@@ -15,7 +15,8 @@
           <input #input type="number" id="cpf"/><br><br>
           <label for="cell">Celular:</label><br>
           <input #input type="number" id="cell"/><br><br>
-          <button (click)="nameC.add(input.value); input.value = ''">Cadastrar</button>
+          <button (click)="nameC.add(input.value); input.value = ''">Cadastrar</button>&nbsp;&nbsp;
+          <button type="reset" >Limpar</button>
       </form>
       <ol>
         <li *ngFor="let c of nameC.getList(); index as i">
