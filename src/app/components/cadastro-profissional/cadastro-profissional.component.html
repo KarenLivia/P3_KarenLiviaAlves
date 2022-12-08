@@ -23,10 +23,9 @@
           <input #input type="text" id="servicos"/><br><br>
     <button (click)="cadastroP.add(input.value); input.value = ''">Cadastrar</button>&nbsp;&nbsp;
     <button type="reset" >Limpar</button>
-      </form>
-      <hr />
+      </form><br>
     </div>
-    <div>
+    <div class="backmid">
       <ol>
         <li *ngFor="let c of cadastroP.getList(); index as i">
           {{c.name}}
@@ -35,4 +34,7 @@
       </ol>
     </div>
   </body>
+  <footer>
+  <p>Todos os direitos reservados.</p>
+</footer>
 </html>

@@ -18,10 +18,9 @@
           <input #input type="number" id="cell"/><br><br>
           <button (click)="nameC.add(input.value); input.value = ''">Cadastrar</button>&nbsp;&nbsp;
           <button type="reset" >Limpar</button>
-      </form>
-      <hr />
+      </form><br>
     </div>
-    <div>  
+    <div class="backmid">  
       <ol>
         <li *ngFor="let c of nameC.getList(); index as i">
           {{c.name}}
@@ -30,4 +29,7 @@
       </ol>
     </div>
   </body>
+  <footer>
+  <p>Todos os direitos reservados.</p>
+</footer>
 </html>
