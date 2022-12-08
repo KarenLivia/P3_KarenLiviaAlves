@@ -19,20 +19,9 @@ button:active {
   font-size: 12px;
 }
 
-.login{
+form{
   margin: auto;
-  width: 12%;
-  border: 1px solid #7b3e8e;
-  padding: 10px;
-  text-align: center;
-  background-color: #f6f2f7
-}
-
-.formCad{
-  margin: auto;
-  width: 15%;
-  border: 1px solid #7b3e8e;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
   background-color: #f6f2f7
 }
