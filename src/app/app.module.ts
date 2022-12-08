@@ -14,6 +14,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { CadastroClienteService } from './services/cadastro-cliente.service';
 import { CadastroProfissionalService } from './services/cadastro-profissional.service';
+import { CadastroServicoComponent } from './components/cadastro-servico/cadastro-servico.component';
+import { CadastroServicoService } from './services/cadastro-servico.service';
+import { LoginService } from './services/login.service';
 
 @NgModule({
   imports:      [ 
@@ -26,6 +29,7 @@ import { CadastroProfissionalService } from './services/cadastro-profissional.se
       {path: "", component: HomeComponent},
       {path: "sair", component: HomeComponent},
       {path: "sobre", component: SobreComponent},
+      {path: "cadastro-servico", component: CadastroServicoComponent},
     ])
   ],
   declarations: [ 
@@ -37,9 +41,10 @@ import { CadastroProfissionalService } from './services/cadastro-profissional.se
     HomeComponent,
     NavbarComponent,
     SairComponent,
-    SobreComponent ],
+    SobreComponent,
+    CadastroServicoComponent ],
   bootstrap:    [ 
     AppComponent ],
-  providers: [CadastroClienteService, CadastroProfissionalService],
+  providers: [CadastroClienteService, CadastroProfissionalService, CadastroServicoService, LoginService],
 })
 export class AppModule { }
