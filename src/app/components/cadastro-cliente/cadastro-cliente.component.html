@@ -7,6 +7,7 @@
   </head>
   <body>
     <div class="backmid">
+      <hr />
       <form class="formCad">
           <h4>Cadastro de cliente</h4><br>
           <label for="name">Nome completo:</label><br>
@@ -18,8 +19,8 @@
           <button (click)="nameC.add(input.value); input.value = ''">Cadastrar</button>&nbsp;&nbsp;
           <button type="reset" >Limpar</button>
       </form>
+      <hr />
     </div>
-    <hr />
     <div>  
       <ol>
         <li *ngFor="let c of nameC.getList(); index as i">
