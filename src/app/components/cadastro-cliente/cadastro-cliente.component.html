@@ -18,13 +18,15 @@
           <button (click)="nameC.add(input.value); input.value = ''">Cadastrar</button>&nbsp;&nbsp;
           <button type="reset" >Limpar</button>
       </form>
+    </div>
+    <hr />
+    <div>  
       <ol>
         <li *ngFor="let c of nameC.getList(); index as i">
           {{c.name}}
           <button (click)="nameC.remove(i)">Excluir</button>
         </li>
       </ol>
-      <hr />
-    </div>  
+    </div>
   </body>
 </html>

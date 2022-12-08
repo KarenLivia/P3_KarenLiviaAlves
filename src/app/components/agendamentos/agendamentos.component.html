@@ -6,12 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-  <div class="container-fluid">
-    <h5>Agenda</h5>
-    <br/>
-      <p>
-        blablabla
-      </p>
-  </div>
+    <div class="backmid"><br>
+      <form class="agenda">
+          <h4>Agenda</h4><br>
+          <label for="date">Selecionar data:</label><br>
+          <input #input type="date" id="date"/><br><br>
+          <label for="time">Selecionar horário:</label><br>
+          <input #input type="time" id="time"/><br><br>
+          <label for="prof">Selecionar profissional:</label><br>
+          <select name="funcao" id="funcao">
+            <option value=""></option>
+          <!-- Inserir aqui os profissionais cadastrados na cadastro-profissional-->
+            </select><br><br>
+            <label for="servico">Selecionar serviço:</label><br>
+            <select name="funcao" id="servico">
+              <option value=""></option>
+            <!-- Inserir aqui os serviços disponíveis-->
+              </select><br><br>
+            <button type="button">Agendar</button>&nbsp;&nbsp;
+            <button type="reset" >Limpar</button><br><br>
+            <p class="link"><a href="https://angular-ivy-stmrnb.stackblitz.io/cadastro-profissional">Criar conta</a></p> <!-- Se quiser, pode substituir por uma rota. -->
+        </form>
+      <!--<ol>
+        <li *ngFor="let c of nameC.getList(); index as i">
+          {{c.name}}
+          <button (click)="nameC.remove(i)">Excluir</button>
+        </li>
+      </ol>-->
+    </div>  
+    <p>Aqui aparecerão os agendamentos</p>
   </body>
 </html>
