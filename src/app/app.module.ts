@@ -17,11 +17,13 @@ import { CadastroProfissionalService } from './services/cadastro-profissional.se
 import { CadastroServicoComponent } from './components/cadastro-servico/cadastro-servico.component';
 import { CadastroServicoService } from './services/cadastro-servico.service';
 import { LoginService } from './services/login.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports:      [ 
     BrowserModule, 
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: "agendamentos", component: AgendamentosComponent},
       {path: "cadastro-profissional", component: CadastroProfissionalComponent},
